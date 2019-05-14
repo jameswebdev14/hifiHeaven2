@@ -1,0 +1,318 @@
+        * {
+            margin: 0;
+            padding: 3px;
+            box-sizing: border-box;
+        }
+        
+        img {
+            margin: 0 10px;
+            width: 90%;
+        }
+        
+        #footer {
+            width: 100%;
+        }
+        
+        #head-section {
+            width: 100%;
+        }
+        
+        #audiogd-section,
+        #littledot-section,
+        #naim-section,
+        #headphone-section,
+        #roksan-section,
+        #schiit-section {
+            width: 100%;
+            background-color: grey;
+        }
+        
+        li {
+            list-style: none;
+        }
+
+        #modalBody li:hover {
+            background-color: blue;
+        }
+
+        .item-description {
+            margin-bottom:20px;
+        }
+        
+        .item-description img {
+            margin-bottom: 15px;
+            border-radius: 7px;
+        }
+
+        .info ul li {
+            color: whitesmoke;
+        }
+        
+        .info ul li:last-of-type {
+            margin-top: 10px;
+        }
+        
+        .highlight {
+            color: red;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 10px;
+        }
+        
+        .company-header {
+            background-color: darkgray;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .company-info {
+            color: white;
+            font-size: 0.8rem;
+            padding: 10px;
+        }
+        
+        #menu {
+            margin-bottom: 20px;
+        }
+        
+        #menu a {
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        
+        #menu a:hover {
+            border-top: 2px solid red;
+            translate: transform()
+        }
+        
+        .naim-logo,
+        .roksan-logo,
+        .schiit-logo,
+        .audiogd-logo {
+            margin-bottom: 15px;
+            max-width: 100%;
+        }
+        
+        .roksan-logo {
+            width: 20%;
+            height: 20%;
+        }
+        
+        .buybtn {
+            margin-bottom: 20px;
+            width: 70px;
+        }
+        
+        .phone-image {
+            max-width: 100%
+        }
+        
+        .phone-description {
+            padding: 5px;
+        }
+        
+        hr {
+            color: white;
+            background-color: white;
+            height: 3px;
+            border: none;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+        
+        #viewCartBtn {
+            border: none;
+            color: orangered;
+            border-radius: 5px;
+            background-color: black;
+            width:40px;
+            padding:5px;
+        }
+        
+        #viewCartBtn:hover {
+            background-color: orangered;
+            color: black;
+            cursor: pointer;
+        }
+        
+        .deleteBtn {
+            float:right;
+        }
+        .modal-content {
+            border-radius: 5px;
+            background-color: lightskyblue;
+            color: orangered;
+        }
+
+        .cart-modal {
+            background: rgba(0, 0, 0, .5);
+        }
+
+        .alert {
+            display: none;
+            margin:5px 0;
+        }
+
+        .top-link {
+            display:flex;
+            justify-content: flex-end;
+        }
+
+        #addedModal {
+            margin:auto;
+            background-color:lightblue;
+            display: none; 
+            position: fixed;
+            border-radius:10px;
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 90%; 
+            height: 60px; 
+            padding:10px;
+        }
+
+        .added-modal-content {
+           background-color: black; /*lightblue;*/
+           color:oranged;
+           width:200px;
+           border-radius:10px;
+           padding:10px;
+        }
+        
+        strong {
+            color:lightgreen;
+        }
+
+        .separator {
+            width:60%;
+            background: rgba(255,255,255, 0.4);
+            margin:auto;
+            height: 1px;
+        }
+
+        #head-section {
+            margin-bottom:0;
+        }
+
+        .lead {
+            color:black;
+        }
+        
+        p {
+            color:white;
+        }
+        /*************************************Large*************/
+        
+        @media screen and (min-width: 768px) {
+            .company-info {
+                margin-top: 30px;
+            }
+
+            hr {
+                display: none;
+            }
+
+            .phone-description {
+                padding-top: 80px;
+            }
+
+            .phone-title {
+                margin-top: 35px;
+                margin-bottom: 5px;
+            }
+
+            .item-description {
+                margin-bottom: 40px;
+            }
+
+            .item-description img {
+                max-width:680px;
+                border-radius: 10px;
+            }
+
+            .item-description img:hover {
+                border-radius:15px;
+            }
+
+            .audiogd-logo {
+                max-width: 30%
+            }
+
+            .naim-logo,
+            .beyer-logo {
+                max-width: 40%;
+            }
+
+            .audeze-logo,
+            .hifiman-logo {
+                width: 45%;
+                margin-bottom: 30px;
+            }
+
+            .senn-logo {
+                margin-bottom: 40px !important;
+                width: 30%;
+                margin: auto auto;
+            }
+
+            #cart-modal {
+                flex-direction:column;
+                justify-content: center;
+                align-content:start;
+                height:auto;
+                width:70%;
+                margin:auto;
+                background-color: lightBlue;
+                border-radius: 5px;
+                padding-left:50px;
+            }
+
+            #cart-view {
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-content:start;
+                height:auto;
+                width:70%;
+                margin:auto;
+                background-color: lightBlue;
+                border-radius: 5px;
+                padding-left:50px;
+            }
+
+            #placeOrderBtn {
+                margin-left:10px;
+            }
+
+            #addedModal {
+                margin:auto;
+                background-color:lightblue;
+                display: none; 
+                position: fixed;
+                border-radius:10px;
+                z-index: 1; 
+                background: rgba(100, 30, 200, 0.5);
+                width: 200px; 
+                height: 60px; 
+                padding:15px;
+                color:white;
+            }
+
+            #added-modal-content {
+               background-color: black; 
+               color:oranged;
+               max-width:200px;
+               border-radius:10px;
+               padding:10px;
+            }
+            
+            .deleteBtn {
+                float: right;
+            }    
+
+            .highlight {
+                margin-bottom:10px;
+            }        
+        }

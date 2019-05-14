@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>hifiheaven</title>
+</head>
+
+<body id="bodyTag">
+    <div class="container" id="top">
+        <div class="row">
+            <section id="head-section" class="text-center">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-3">Hifi Heaven</h1>
+                        <h4 class="lead">The Home of World Class Hi Fi Equipment</h4>
+                        <h5 class="lead">We stock hi fi equipment for all tastes from some of the worlds leading brands.<br>From moderately priced gear that rivals products for performance costing thousands of pounds more, to expensive brands with a wordwide reputation for
+                            quality and performance
+                        </h5>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section class="menu-links col-md-12">
+                <div id="menu" class="d-flex justify-content-center flex-wrap">
+                    <a href="#audiogd-section">Audio-gd</a>
+                    <a href="#littledot-section">Little Dot</a>
+                    <a href="#naim-section">Naim Audio</a>
+                    <a href="#roksan-section">Roksan Audio</a>
+                    <a href="#schiit-section">Schiit Audio</a>
+                    <a href="#headphone-section">Headphones</a>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+	          <button id="viewCartBtn" class="ml-auto" data-toggle="modal" data-target=".cart-modal" onclick="viewcart()">
+                        <i class="fas fa-shopping-basket"></i></button> 
+	    </div>
+	      
+	   <!-- Cart Model -->
+        <div class="modal fade cart-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content d-flex flex-column">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="top-close-x">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body d-flex flex-column" id="modalBody">
+                        <ul id="cartList" class="justify-content-start"></ul>
+                        <h5 id="cartValue"></h5>
+                    </div>
+                    <div class="modal-footer d-flex">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="placeOrder()">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="row">
+            <section id="audiogd-section" class="text-center">
+            	  <div class="company-header">
+                    <a href="http://www.audio-gd.com/En%20audio-gd.htm">
+                        <img src="assets/images/audiogd-logo.jpg" alt="" class="audiogd-logo">
+                        <h3><strong>Audio-gd</strong></h3>
+                    </a>
+                    <h5 class="company-info">
+                        All Audio-GD’s products are designed and developed under the leadership of Mr. He Qinghua, the “First Prize Winner” of the National Semiconductor (USA) Audio Design Contest.<br>With strong research and development capability in
+                        audio technology, Audio-GD offers a complete series of Hi-Fi equipments - DAC, preamplifier and power amplifier - with our signature “Audio-GD Current Signal System“ (ACSS) technology.<br>Our ACCS technology transmits all audio
+                        signals via “Current” domain which offers the least colored, most detailed and neutral sound.<br>In addition, we also master advanced audio technologies like power regeneration technology and full balanced audio technology. Our
+                        technology is on a par with the international famous audio equipment manufacturers.<br>Audio-GD has been growing steadily over the years and is renowned amongst local and foreign customers. We insist on the build quality with no
+                        compromise. To ensure the best quality, every technician of our company is not only well experienced but also a Hi-Fi lover.
+                    </h5>
+                </div>
+                <!-- DACS -->
+                <div>
+                    <h4 class="highlight">DACS</h4>
+                    <div class="item-description">
+                        <h4 class="highlight">NFB 7.77</h4>
+                        <div class="info">
+                            <ul>
+                                <li>Dedicated Discrete Fully Balanced DAC Built in FPGA processor to reject jitter DSD</li>
+                                <li>DXD support from USB/I2S</li>
+                                <li style="color: red;">Dual 32bit / 768K Sabre ES9038Pro</li>
+                                <li>32bit / 384K Asynchronous Transfer Amanero Combo 384 with USB isolator</li>
+                                <li>Built in OCC and TCXO, no upgrade options</li>
+                                <li>Vibrant, dynamic, rhythmic, detailed and exciting sound</li>
+                                <li><strong>Price: (Exclude shipping cost) £1480 (With USB Isolator and PSU upgraded)</strong></li>
+                            </ul>
+                            <button class="buybtn btn btn-outline-success" data-toggle='modal' data-target='added-modal' onclick="addToCart('Audio-GD NFB-7.77', '1480')">Buy</button>
+                        </div>
+                        <img src="assets/images/NFB7.jpg" alt="NFB-7.77" class="img-fluid img1">
+                        <img src="assets/images/NFB7-rear.jpg" alt="NFB-7.77 rear" class="img-fluid">
+                    </div>
+                    <div class="item-description">
+                        <h4 class="highlight">R2R 7</h4>
+                        <div class="info">
+                            <ul>
+                                <li>Fully Dedicated Discrete Real Balanced R-2R resistor ladders DAC</li>
+                                <li style="color:red;">Built in 4 groups DA-7 R-2R modules</li>
+                                <li>Built in FPGA processor to reject jitter</li>
+                                <li>DSD, DXD support from USB / RJ45 / HDMI</li>
+                                <li>32bit / 384K Asynchronous Transfer Amanero Combo 384 with USB isolator </li>
+                                <li>Built in OCC , TCXOs and Hi-End parts ,no upgrade options</li>
+                                <li>Laid back, refined, organic, more analog sound</li>
+                                <li><strong>Price: (Exclude shipping cost)
+                                    £2280 (With USB Isolator and PSU upgraded)</strong>
+                                </li>
+                            </ul>
+                            <button class="buybtn btn btn-outline-success" onclick="addToCart('Audio-GD R2R 7', '2280')">Buy</button>
+                        </div>
+                        <img src="assets/images/R2R73.jpg" alt="R2R7" class="img-fluid img1">
+                        <img src="assets/images/R2R74-rear.jpg" alt="R2R7 rear" class="img-fluid">
+                        <hr class="separator">
+                    </div>
+                </div>
+                <!-- Headphone amps -->
+                <div>
+                    <h4 class="highlight">Headphone Amps</h4>
+                    <div class="item-description">
+                        <h4 class="highlight">Master 9 </h4>
+                        <div class="info">
+                            <ul>
+                                <li>Real Balanced ACSS design</li>
+                                <li style="color: red;">Pure Class A (9W @ 40 ohm)</li>
+                                <li style="color: red;">Preamp & Headphone amp</li>
+                                <li>Super Exponential Volume Characteristic</li>
+                                <li>OCC and hi-end parts applied, no upgrade option available</li>
+                                <li>Linear true to life sound</li>
+                                <li><strong>Price: £1100  (Standard version)
+                                    £1250 (Custom version for HE6, please enquire)</strong>
+                                </li>
+                            </ul>
+                            <button class="buybtn btn btn-outline-success" onclick="addToCart('Audio-GD Master-9', '1100')">Buy</button>
+                        </div>
+                        <img src="assets/images/Master9.jpg" alt="Master 9" class="img-fluid img1">
+                        <img src="assets/images/Master9-rear.jpg" alt="Master 9 rear" class="img-fluid">
+                        <hr class="separator">
+                    </div>
+                    <div class="item-description">
+                        <h4 class="highlight">NFB-1</h4>
+                        <div class="info">
+                            <ul>
+                                <li>The full balanced design based on Master 9</li>
+                                <li>Class A PSUs built in</li>
+                                <li style="color: red;">Discrete Headphone amplifier / Preamplifier</li>
+                                <li>Super Exponential Volume Characteristic</li>
+                                <li style="color: red;">8000mW at 40 ohm output</li>
+                                <li>OCC and hi-end parts applied</li>
+                                <li>Clean natural accurate sound</li>
+                                <li><strong>Price: £385  (Exclude shipping cost)
+                                    Free mini remote controller (not in warranty)</strong>
+                                </li>
+                            </ul>
+                            <button class="buybtn btn btn-outline-success" onclick="addToCart('Audio-GD NFB-1', '385')">Buy</button>
+                        </div>
+                        <img src="assets/images/NFB1.jpg" alt="NFB-1" class="img-fluid img1">
+                        <img src="assets/images/NFB1-rear.jpg" alt="NFB-1 rear" class="img-fluid">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Little Dot Section -->
+        <div class="row">
+            <section id="littledot-section" class="text-center">
+            	<a href="#top" class="top-link"><i class="fas fa-chevron-up"></i></a>
+                <div class="company-header">
+                    <a href="http://www.littledot.net/forum/index.php">
+                        <h3><strong>Little Dot</strong></h3>
+                    </a>
+                    <h5 class="company-info">
+                        All Little Dot’s products are designed and developed by expert technicians. With strong research and development capability in audio technology. Little Dot offers a number of solid state and tube headphone amps at exceedingly good prices with performance
+                        to embarrass much pricier amps.
+                    </h5>
+                </div>
+                <!-- Tube Headphone Amps -->
+                <div>
+                    <h4 class="highlight">Tube Headphone Amps</h4>
+                    <div class="item-description">
+                        <h4 class="highlight">Little Dot Mk 6+</h4>
+                        <div class="info">
+                            <p>The Little Dot MK VI+ is our flagship headphone amplifier/pre-amplifier in the Little Dot MK-series. A fully balanced architecture, the Little Dot MK VI+ has exceptional dynamic range and can produce clean amplitudes of 70Vp-p
+                                into 120 ohms! The balanced Class-A SEPP (single-ended push pull) OCL (output capacitor-less) circuit topology delivers rich tonality and brute force clean power for maximum dynamics and low frequency impact. We carefully
+                                selected quality components to make up the Little Dot MK VI+ circuit, and you will find Neutrik, ALPS, Vishay-Dale, WIMA, ERO, and CHEMI-COM among the critical circuit components used. The Little Dot MK VI+ also adds in
+                                user-tweaking options such as two gain settings to delivery maximum compatibility with your headphones!
+                            </p>
+                            <ul>
+                                <li>Available in either Black (default) or Silver</li>
+                                <li>Fully Balanced Architecture</li>
+                                <li>Inputs: Balanced: 2 x 3-pin XLR, Single-ended: 2x RCA</li>
+                                <li>SEPP (Single-ended Push Pull) OCL (Output CapacitorLess) in Class-A</li>
+                                <li>Signal-to-Noise: 92 dB</li>
+                                <li>User Selectable Gain Settings: Low (10 dB) and High (15 dB)</li>
+                                <li>Power Output: 5W per channel into 50 ohms, 1W per channel in 120 ohms</li>
+                                <li>Metric: 350mm (length) by 290mm (width) by 140mm (height)</li>
+                                <li><strong>Price (including UK delivery) £875</strong></li>
+                            </ul>
+                            <button class="buybtn btn btn-outline-success" onclick="addToCart('Little Dot Mk 6', '875')">Buy</button>
+                        </div>
+                        <img src="assets/images/littledot6.jpg" alt="Little Dot 6+" class="img-fluid img1">
+                        <img src="assets/images/littledot6-rear.jpg" alt="Little Dot 6+ rear" class="img-fluid">
+                        <hr class="separator">
+                    </div>
+                    <div class="item-description">
+                        <h4 class="highlight">Little Dot Mk 8 SE</h4>
+                        <div class="info">
+                            <p>The Little Dot MK VIII SE further specializes our Little Dot MK VI+ platform for no-compromise performance with high impedance headphones. Fully balanced architecture with single-ended headphone functionality as well, the Little
+                                Dot MK VIII SE is also dual-mono with independent amplifiers with their own isolated toroidal transformer power supplies. An output capacitor-less design minimizes components in the signal path, delivering a "pure" signal
+                                free from unwanted distortion and color. The Little Dot MK VIII SE's sound signature is designed to be provide a reference-level of transparency with a touch of tube warmth and tonal richness. With 60V p-p voltage swing,
+                                dynamic range and impact is both effortless and thunderous. Low frequencies extend deep with slam and authority, yet remains tight and musical. The Little Dot MK VIII SE is designed to be used with high impedance headphones
+                                like Sennheisers (HD600, HD650, HD800) and Beyerdynamics. </p>
+                            <ul>
+                                <li>Available in either Black (default) or Silver</li>
+                                <li>Fully Balanced, Dual-Mono Architecture</li>
+                                <li>OCL (Output CapacitorLess) in Class-A</li>
+                                <li>Vacuum Tubes: 2x 12AT7, 4x 6H30PI</li>
+                                <li>Inputs: Balanced: 2x 3-pin XLR, Single-ended: 2x RCA</li>
+                                <li>Signal-to-Noise: 96 dB</li>
+                                <li>User Selectable Gain Settings: Low (14 dB) and High (20 dB)</li>
+                                <li>Voltage Swing: 60V p-p</li>
+                                <li>Power Output: 2W per channel @ 600 ohms, 1W per channel @ 300 ohms</li>
+                                <li>Metric: 350mm (length) by 290mm (width) by 140mm (height)</li>
+                                <li><strong>Price (including UK delivery) £1050</strong></li>
+                            </ul>
+                            <button class="buybtn btn btn-outline-success" onclick="addToCart('Little Dot Mk 8SE', '1050')">Buy</button>
+                        </div>
+                        <img src="assets/images/littledot8.jpg" alt="Little Dot 8" class="img-fluid img1">
+                        <img src="assets/images/littledot8-rear.jpg" alt="Little Dot 8 rear" class="img-fluid">
+                        <hr class="separator">
+                    </div>
+                </div>
+                <!-- Solid state Headphone amps -->
+                <div>
+                    <h4 class="highlight">Solid State Headphone Amps</h4>
+                    <div class="item-description">
+                        <h4 class="highlight">Little Dot MK 7+</h4>
+                        <div class="info">
+                            <p>The Little Dot MK VII+ is a fully balanced, dual-mono headphone amplifier with single-ended compatibility. The circuit is composed of four independent channels with LME49710HA pre-stage and discrete BD139/BD140 transistor output
+                                stage. The four independent channels are fed by dual double-wound toroidal transformers with double rectification and four independent regulators which constitute a true “dual-mono” architecture. The input and output XLR
+                                jacks are Swiss-made locking Neutrik for superior conductivity and durability. The input RCA jacks are premium American CMC and the 6.35mm output headphone port is also a locking Neutrik jack. The volume control is a Japanese
+                                ALPS potentiometer for exceptional tracking and smooth rotation. Premium hand-selected resistors are used throughout the circuit alongside German WIMA / CHEMI-COM capacitors. The Little Dot MK VII+ is an OCL (output capacitor-less)
+                                design which provides an unmatched level of sound purity as components in the signal path are minimized to reduce distortion and imparting color to the sound. Extremely low output impedance and high damping factor coupled
+                                with immense power output ensures iron control of any headphone driver. The Little Dot MK VII+ delivers an unmatched level of transparency with unbound dynamic range, lightening quick transient response, and thunderous
+                                low frequency impact.
+                            </p>
+                            <ul>
+                                <li>Inputs: Balanced: 2x 3-Pin XLR, Single-ended: 2x RCA</li>
+                                <li>Outputs: Balanced: 4-Pin XLR, Single-ended: 1/4" (6.35mm) TRS Stereo jack</li>
+                                <li>Frequency Response: 5 Hz - 200 Khz (- 1dB)</li>
+                                <li>THD+N: 0.001% (2 V RMS @ 1000 KHz)</li>
+                                <li>Recommended Headphone Impedance: 32 - 600 ohms</li>
+                                <li>Signal-to-Noise: 98 dB</li>
+                                <li>User Selectabale Gain Settings: Low (2.5x) and High (5x)</li>
+                                <li>Power Output: 1500 mW into 8 ohms, 1000 mW into 32 ohms, 500 mW into 120 ohms, 300 mW into 300 ohms</li>
+                                <li>Metric: 275mm (length) by 217mm (width) by 61mm (height)</li>
+                                <li><strong>Price (including UK delivery) £465</strong></li>
+                            </ul>
+                            <button class="buybtn btn btn-outline-success" onclick="addToCart('Little Dot Mk 7+', '465')">Buy</button>
+                        </div>
+                        <img src="assets/images/littledot7.jpg" alt="Little Dot 7" class="img-fluid img1">
+                        <img src="assets/images/littledot7-rear.jpg" alt="Little Dot 7 rear" class="img-fluid">
+                        <hr class="separator">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Naim Section -->
+        <div class="row">
+            <section id="naim-section" class="text-center">
+            	<a href="#top" class="top-link"><i class="fas fa-chevron-up"></i></a>
+                <div class="company-header">
+                    <a href="https://www.naimaudio.com/">
+                        <img src="assets/images/naim-logo.png" alt="Naim Audio" class="naim-logo">
+                    </a>
+                    <h5 class="company-info">
+                        Every Naim product is conceived, designed and engineered entirely in service of the sound, revealing a pure experience of music that is as close as possible to its original live source. We believe that the exploration of sound is an adventure that rewards
+                        you with a clarity and connection that becomes more powerful the deeper you travel within it. Which is why, every element within our systems is crafted to create a silence around the sound, reducing any interference between you
+                        and the intention of the artist. We achieve this through tireless attention to four fundamentals in our engineering:<br> 1. Space - We give each of the critical components their own environment, omitting
+                        outside or ‘toxic’ interference, which means no compromise on the purity of sound.<br> 2. Circuitry - We minimise any interplay between the internal levels, so that you can simultaneously enjoy both the quiet and the loud, as originally
+                        intended.
+                        <br> 3. Purposeful materiality - We use materials that excel in performance, not just appearance.<br> 4. Technology - We constantly strive for new and innovative ways to achieve our goals, integrating sophisticated electronic design
+                        and software development, with mechanical engineering and acoustics to deliver a truly advanced sonic experience.
+                    </h5>
+
+                </div>
+                <!-- Amplifiers -->
+                <div class="item-description">
+                    <h4 class="highlight">SuperNait 2</h4>
+                    <div class="info">
+                        <p>It’s been almost 30 years since we designed our first integrated amplifier: time enough to define and refine the technical ingredients essential to high-end performance. Our reference quality SUPERNAIT 2 represents the pinnacle
+                            of this accumulated knowledge. It is both the most sophisticated integrated amplifier we’ve ever created and a classic Naim Audio product, shot through with the soul of the original, iconic NAIT. SUPERNAIT 2 includes a Class
+                            A preamp output stage which doubles as a headphone amplifier, ceramic heatsink technology that minimises capacitive coupling between the chassis and output transistors for optimum sound quality. Its inputs are each individually
+                            decoupled and hand-wired to minimise noise and interference while internal switching employs ultra-low-noise, constant current sources which are derived directly from the electronic design of the flagship NAC 552 preamplifier.
+                            Set at the core of every SUPERNAIT 2 is a custom-designed toroidal transformer featuring seven separate windings. This can be further upgraded with one of our external HiCap or SuperCap power supplies. Even the analogue delights
+                            of vinyl are yours to explore: simply add a StageLine or SuperLine phono stage. The SUPERNAIT 2 doesn't miss a trick or a beat. It doesn't miss any music either. The SUPERNAIT 2 is never fazed by the demands of either speaker
+                            or music. It simply delivers dynamic, detailed and engaging music that can’t fail to move you.
+                        </p>
+                        <ul>
+                            <li>80W per channel power output</li>
+                            <li>Six individually decoupled and hand-wired inputs with support for both DIN and RCA connections</li>
+                            <li>Built in Naim Audio DR (Discrete Regulator) power supply for preamplifier section</li>
+                            <li>1/4” (6.35mm) headphone output and high quality class-A headphone amplifier</li>
+                            <li>Ceramic heat sink isolation for improved sound quality on power and preamp sections</li>
+                            <li>Dedicated subwoofer output</li>
+                            <li>Powered input for use with StageLine or SuperLine phono stage</li>
+                            <a href="https://www.whathifi.com/naim/supernait-2/review">SuperNait 2 review</a>
+                            <li><strong>Price (including UK delivery) £2700</strong></li>
+                        </ul>
+                        <button class="buybtn btn btn-outline-success" onclick="addToCart('SuperNait 2', '2700')">Buy</button>
+                    </div>
+                    <img src="assets/images/supernait2_2.jpg" alt="supernait 2" class="img-fluid img1">
+                    <img src="assets/images/supernait2_rear.jpg" alt="supernait 2 rear" class="img-fluid">
+                    <hr class="separator">
+                </div>
+                <div class="item-description">
+                    <h4 class="highlight">Nait XS 2</h4>
+                    <div class="info">
+                        <p>
+                            The NAIT XS 2 offers much of the performance of our reference quality SUPERNAIT 2 in a simpler, slimmer package combining a 70W power amplifier with six analogue inputs. Its high performance preamplifier stage is as transparent as you would expect from
+                            a Naim Audio amplifier, and it also shares the single-ended class-A headphone output of its larger sibling. The NAIT XS 2 can be upgraded with our external power supplies, power amplifiers and even phono stages to become the
+                            musical heart of a modern music system to get the best from digital, CD, vinyl and AV sources.
+                        </p>
+                        <ul>
+                            <li>70W per channel power output</li>
+                            <li>Six inputs with support for both DIN and RCA connections</li>
+                            <li>AV bypass mode for simple connection to an existing AV system</li>
+                            <li>1/4” (6.35mm) headphone output and high quality class-A headphone amplifier</li>
+                            <li>Ceramic heat sink isolation for improved sound quality on power and preamp sections</li>
+                            <li>Preamplifier, power amplifier and subwoofer connections</li>
+                            <a href="https://www.whathifi.com/naim/nait-xs/review">Nait XS review</a>
+                            <li><strong>Price (including UK delivery) £1500</strong></li>
+                        </ul>
+                        <button class="buybtn btn btn-outline-success" onclick="addToCart('Nait XS 2', '1500')">Buy</button>
+                    </div>
+                    <img src="assets/images/naitxs2_2_0.jpg" alt="nait XS 2" class="img-fluid img1">
+                    <img src="assets/images/naitxs2_rear.jpg" alt="nait XS 2 rear" class="img-fluid">
+                    <hr class="separator">
+                </div>
+                <!-- CD Players -->
+                <div>
+                    <h5 class="highlight">CD Players</h5>
+                    <div class="item-description">
+                        <h4 class="highlight">CD 5 SI</h4>
+                        <div class="info">
+                            <p>
+                                The CD5si CD player, especially when partnered with the complementary NAIT 5si integrated amplifier, sets a thrilling new standard for musical performance at our entry level. With so much focus on audio streaming and downloads it might seem easy to forget
+                                the humble CD. But not at Naim Audio. After all, the CD is still by far the world's most popular music format and for millions of music enthusiasts compact disc collections still constitute the heart and soul of precious
+                                music libraries. This outstanding machine, which replaces the previous CD5i, brings worthwhile performance benefits for users but retains the functionality and straightforward usability of the classic player. The CD5si
+                                is designed to be the best in its class, incorporating genuine technological advances to provide a thoroughly enjoyable musical experience.
+                            </p>
+                            <ul>
+                                <li>Stiff, extruded aluminium casework provides excellent resistance to external vibration</li>
+                                <li>High performance drawer and transport mechanism as with our premium CDX2 model, providing low resonance, low-inertia disc operation</li>
+                                <li>Discrete digital and analogue power supplies for superior isolation of sound critical electronics</li>
+                                <a href="https://www.whathifi.com/naim/cd5si/review">Nain CD 5.2 SI review</a>
+                                <li><strong>Price (including UK delivery) £990</strong></li>
+                            </ul>
+                            <button class="buybtn btn btn-outline-success" onclick="addToCart('Naim Cd 5 SI', '990')">Buy</button>
+                        </div>
+                        <img src="assets/images/cd5si_2.jpg" alt="cd5.2 SI" class="img-fluid img1">
+                        <img src="assets/images/cd5si_rear.jpg" alt="cd5.2 SI rear" class="img-fluid">
+                        <hr class="separator">
+                    </div>
+                </div>
+                <div class="item-description">
+                    <h4 class="highlight">CDX 2.2</h4>
+                    <div class="info">
+                        <p>
+                            Designed well, a product should have many years of useful life. The original Naim Audio CDX debuted in 1999, and the revised CDX2 shares plenty of design DNA with its predecessor. Its radial arc disc tray is classic Naim Audio. It is different from the
+                            motorised assemblies used by other players, but undoubtedly better, with superior isolation and resistance to resonance. In its latest incarnation, the CDX2 has incorporated some useful new enhancements, including a switchable
+                            digital output and extra low-noise clock regulation. After all, being able to do something well shouldn’t stop you from trying to do it better.
+                        </p>
+                        <ul>
+                            <li>Suspended transport with low-mass magnetic clamping mechanism to resist resonance</li>
+                            <li>Anti-vibration resonance-controlled feet plus cast and extruded anti-magnetic chassis to further counter vibration</li>
+                            <li>Fully double-regulated power supply with 20 low-noise, regulated voltages on the main circuit board, plus separate supplies on the servo control and display boards</li>
+                            <li>User-selectable DIN and RCA analogue outputs, plus digital output (only functions when analogue outputs are disabled)</li>
+                            <a href="https://www.whathifi.com/naim/cdx2/review">Naim CDX 2.2 review</a>
+                            <li><strong>Price (including UK delivery) £3550</strong></li>
+                        </ul>
+                        <button class="buybtn btn btn-outline-success" onclick="addToCart('Naim CDX 2.2', '3550')">Buy</button>
+                    </div>
+                    <img src="assets/images/cdx2_2.jpg" alt="cd x2" class="img-fluid img1">
+                    <img src="assets/images/cdx2_rear.jpg" alt="cd x2 rear" class="img-fluid">
+                    <hr class="separator">
+                </div>
+
+            </section>
+        </div>
+
+        <!-- Roksan Section -->
+        <div class="row">
+            <section id="roksan-section" class="text-center">
+            	<a href="#top" class="top-link"><i class="fas fa-chevron-up"></i></a>
+                <div class="company-header">
+                    <a href="http://www.roksan.co.uk/">
+                        <img src="assets/images/roksan-logo-black.png" class="roksan-logo">
+                        <h3><strong>Roksan Audio</strong></h3>
+                    </a>
+                    <h5 class="company-info">
+                        A British company founded over thirty years ago, Roksan is one of the most recognised names in the audio industry. Offering international, multi-award winning products ranging from the highest level of vinyl replay to amplification, loudspeakers and streaming
+                        source products. All equipment is still designed and manufactured in the company’s London-based headquarters and factory. Roksan is highly respected by journalists, distributors, retailers and customers alike throughout the globe.
+                        Throughout its existence Roksan has regularly produced what can only be described as ‘audio classics’, with each of these attaining outstanding reviews and the highest accolades. This consistency of excellence has resulted in the
+                        company’s highly respected status it attains today, giving customers the ability to rely on any Roksan product with confidence in both reliability and performance.
+                    </h5>
+                </div>
+                <!-- Amplifiers -->
+                <div class="item-description">
+                    <h4 class="highlight">Roksan K3 Integrated Amp</h4>
+                    <div class="info">
+                        <p>
+                            With its elegant design and inclusion of aptX Bluetooth input as standard, the K3 is truly an amplifier for today’s discerning audiophile. There is power and bass drive in abundance, along with superb sound staging and engaging detail. You can stream
+                            music via any Bluetooth enabled device and the aptX coding allows streaming of high resolution audio files from a compatible source. To add to its versatility there is also a Moving Magnet phono input and five line level inputs.
+                            Most of all, the K3 Integrated Amplifier offers excellent value for money when it comes to build, design, flexibility and sound quality.
+                        </p>
+                        <ul>
+                            <li>Moving Magnet phono input</li>
+                            <li>Five additional Line inputs for other sources</li>
+                            <li>User remote included</li>
+                            <li>Elegant new chassis design with improved ventilation</li>
+                            <li>Improved power and detail</li>
+                            <li>Symmetrical amplifier layout</li>
+                            <li>High quality signal output relays</li>
+                            <li>mproved power supply layout</li>
+                            <li>Directly mains-powered power amp section</li>
+                            <li>Switchable bypass input</li>
+                            <li>New op amps, audio and power supply circuits and layouts</li>
+                            <a href="https://www.whathifi.com/roksan/k3-integrated/review">Roksan K3 review</a>
+                            <li><strong>Price (including UK delivery) £1250</strong></li>
+                        </ul>
+                        <button class="buybtn btn btn-outline-success" onclick="addToCart('Roksan K3', '1250')">Buy</button>
+                    </div>
+                    <img src="assets/images/roksan_k3.jpg" alt="" class="img-fluid img1">
+                    <img src="assets/images/roksan_k3_rear.jpg" alt="" class="img-fluid">
+                    <hr class="separator">
+                </div>
+                <div class="item-description">
+                    <h4 class="highlight">Caspian M2 Integrated Amp</h4>
+                    <div class="info">
+                        <p>
+                            Like its CD Player brother, the Caspian Integrated has received numerous awards and five star reviews from around the globe for its sophisticated, yet powerful and grippy performance.
+                        </p>
+                        <ul>
+                            <li>85 Watts/Channel into 8Ω,125 W/Ch into 4Ω</li>
+                            <li>Five line inputs plus tape input and output</li>
+                            <li>First input switchable to balanced XLR</li>
+                            <li>Independent Preamplifier stage Power Supply</li>
+                            <li>Gold plated input RCA & XLR connectors and speaker binding posts</li>
+                            <li>Power amplifier input (requires internal work for activation)</li>
+                            <a href="https://www.whathifi.com/roksan/caspian-m2/review">Roksan Caspian M2 Review</a>
+                            <li><strong>Price (including UK delivery) £1500</strong></li>
+                        </ul>
+                        <button class="buybtn btn btn-outline-success" onclick="addToCart('Roksan Caspian Amp', '1500')">Buy</button>
+                    </div>
+                    <img src="assets/images/caspianM2.jpg" alt="Caspian Amp" class="img-fluid img1">
+                    <img src="assets/images/caspianM2-rear.jpg" alt="Caspian Amp rear" class="img-fluid">
+                    <hr class="separator">
+                </div>
+                <!-- CD Players -->
+                <div>
+                    <h4 class="highlight">CD Players</h4>
+                    <div class="item-description">
+                        <h4 class="highlight">Roksan Blak Integrated CD player and Amplifier</h4>
+                        <div class="info">
+                            <p>
+                                The pinnacle of Roksan’s CD replay. Our finest disc player is a highly sophisticated design with striking aesthetics and an audiophile reference standard performance.
+                            </p>
+                            <ul>
+                                <li>3 x digital outputs (XLR, Optical & RCA)</li>
+                                <li>2 x Analogue outputs (XLR, RCA)</li>
+                                <li>Very high quality audiophile standard DAC chipset for optimum detail retrieval</li>
+                                <li>Advanced digital clock for top quality performance</li>
+                                <li>Totally isolated disc mechanism to eliminate vibration</li>
+                                <li>Dimmable oversize LED display</li>
+                                <a href="https://www.whathifi.com/roksan/blak-integrated/review">Roksan Blank CD/Amplifier review</a>
+
+                                <li><strong>Price (including UK delivery) £2800</strong></li>
+                            </ul>
+                            <button class="buybtn btn btn-outline-success" onclick="addToCart('Roksan Blak', '2800')">Buy</button>
+                        </div>
+                        <img src="assets/images/blak.jpg" alt="Roksan Blak" class="img-fluid img1">
+                        <img src="assets/images/blak-rear.jpg" alt="Roksan Blak rear" class="img-fluid">
+                        <hr class="separator">
+                    </div>
+                </div>
+                <div class="item-description">
+                    <h4 class="highlight">Roksan Caspian M2 CD Player</h4>
+                    <div class="info">
+                        <p>
+                            The award winning Caspian CD Player has become one of the best-known products in British audio. Still the choice among many aficionados, it’s one of the finest players on the market for its price.
+                        </p>
+                        <ul>
+                            <li>CD digital audio system (CD, CD-R, CD-RW)</li>
+                            <li>S/N Ratio (IHF-A Wtd.) 105 dB</li>
+                            <li>Digital Outputs: 75 Ohm Coaxial, RCA Gold plated 110 Ohm Balanced AES/EBU, XLR Gold plated Optical, Toslink</li>
+                            <li>Analogue Outputs: L&R, RCA Gold plated, L&R Balanced XLR Gold plated</li>
+                            <li>D/A Conversion PCM1798 Advace Segment, Audio-Stereo DAC</li>
+                            <li>Resolution/Sampling 24 bits / 192 kHz</li>
+                            <li>Jitter less than 130 psec (Typically less than 70 psec)</li>
+                            <li>Two high performance low noise toroidal transformers 12 fully regulated power rails</li>
+                            <li>Power Source (Not Switchable) 100V – 120V 50Hz / 60Hz 220V – 240V 50Hz / 60Hz</li>
+                            <li>Dimensions 432 x 330 x 70 (WxDxH) mm, 432 x 330 x 80 (including feet)</li>
+                            <a href="https://www.whathifi.com/roksan/caspian-m2-cd/review">Roksan Caspian M2 Cd Player review</a>
+                            <li><strong>Price (including UK delivery) £1600</strong></li>
+                        </ul>
+                        <button class="buybtn btn btn-outline-success" onclick="addToCart('Roksan Casian M2 CD', '1600')">Buy</button>
+                    </div>
+                    <img src="assets/images/caspianM2.jpg" alt="Roksan Caspian CD " class="img-fluid img1">
+                    <img src="assets/images/caspianM2-rear.jpg" alt="Rosan Caspian CD rear" class="img-fluid">
+                    <hr class="separator">
+                </div>
+
+            </section>
+        </div>
+        <!-- Schiit Section -->
+        <div class="row">
+            <section id="schiit-section" class="text-center">
+            	<a href="#top" class="top-link"><i class="fas fa-chevron-up"></i></a>
+                <div class="company-header">
+                    <a href="http://www.schiit.com/home">
+                        <img src="assets/images/schiit-logo.gif" alt="" class="schiit-logo">
+                        <h3><strong>Schiit Audio</strong></h3>
+                    </a>
+                    <h5 class="company-info">
+                        Who We Are? Schiit got started in 2010 when two audio industry veterans decided it was time to shake things up a bit. The two audiophiles are Jason Stoddard, formerly of Sumo, and Mike Moffat, formerly of Theta. Together, they have designed dozens of
+                        audio and A/V products, from the Andromeda III to the Cobalt 307 to the DS Pre and Angstrom 200. So, yeah: fully balanced differential power amplifiers, fully discrete I/V conversion stages, audiophile D/A converters, relay-switched
+                        stepped attenuator volume controls in preamps.<br>The first DTS home theater surround processor on the market . . . we’ve done a ton of stuff. So What Now, and Why So Much Headphone Stuff? In the old days,
+                        audiophiles went up the food chain from the table radio to the console stereo to separate speakers the size of refrigerators and monoblocks that would cook a cat. Today, nobody starts with a table radio. Everyone—and we mean everyone—starts
+                        with headphones. So, yeah. We do a lot of headphone stuff.<br>What makes them special are three things: Unique Multibit DAC and Digital Filter Technologies Today, virtually every DAC uses a reduced-bit technology known as "delta
+                        sigma." Multibit DACs have largely gone by the wayside, thanks to less-expensive delta-sigma technology. The few multibit DACs that exist either use NOS (new old stock) D/A chips, one of two or three still-extant multibit chips,
+                        or build their own R2R ladders at high cost.<br>We've always believed that multibit DACs provide the best sonic performance, especially when coupled with Schiit's unique, DSP-based closed-form digital filter. This is why we created
+                        two entirely new multibit DAC architectures using current-production, medical/military grade D/A converters that have linearity specs far exceeding any audio DAC. If you'd like to learn more, read about Yggdrasil, Gungnir Multibit,
+                        or Bifrost Multibit.<br>Innovative Analog Approaches On the analog side, we've also taken innovative approaches, each uniquely designed for the task at hand. Even our least expensive headphone amplifier is essentially a miniature,
+                        fully discrete, DC coupled, Lin-topology power amplifier.<br>We've introduced unique output stages to wring more power out of Lyr 2 with its Dynamically Adaptive output, re-introduced inherently balanced topologies like the circlotron
+                        in Mjolnir 2, and created unique "analog computer-style" protection systems.<br>For Ragnarok, we introduced the entirely new concept of 100% intelligent microprocessor management of the entire amplifier--from bias to DC level to
+                        overcorrect protection...and included a relay-switched stepped attenuator, for perfect channel matching and no ICs in the signal path...and also created an amplifier that's comfortable driving everything, from tiny IEMs to giant
+                        speakers.
+                        <br> Designed for the Real World The real world is a complex place, which is why all of our products are overbuilt. Pick up one of our affordable Valhalla 2 or Lyr 2 amps, and marvel at the weight, heft, and solidity (each of those
+                        two amplifiers use two separate transformers with real high-voltage supplies—an approach that's usually far beyond their modest price. Then, we test them extensively with Stanford Research audio analyzers (and our ears), and we
+                        burn-in every product from Asgard 2 on up for a minimum of 1 day to help catch any early failures. (Ragnarok and Yggdrasil get 4 days each).<br>We also keep very close tabs on any service and support needs, so you can rest assured
+                        of years of great sound. And—it bears mentioning—we believe that close-coupled, local control of all of the aspects of production delivers better products.
+                        <br>That's why we design and produce our stuff here in the USA, with the vast majority of parts cost going to US-based companies manufacturing in the US. We need all of that clarification in there because some people have played
+                        games with what "Made in USA" means. When we say it, it means that our chassis guys are right over the hill in the San Fernando Valley, our transformers are made here in California, our boards come from the east coast (of the USA),
+                        and we design, assemble, and test everything here in Valencia, California. Why don’t you check out our Schiit?
+                    </h5>
+                </div>
+                <!-- Amplifiers -->
+                <h5 class="highlight">Amplifiers</h5>
+                <div class="item-description">
+                    <h4 class="highlight">Schiit Mjolnir 2</h4>
+                    <div class="info">
+                        <p>
+                            Wait. Tube or solid-state? Yes.<br> Not only is Mjolnir 2 the only balanced tube hybrid headphone amp, it introduces our all-new LISST solid-state tube option for a 100% solid-state option.<br>In terms of performance, it is
+                            a unique end-game headphone amp fully ready for any headphone, from IEMs to the hardest-to-drive planars. Choose Tube Hybrid, Solid-State, or Both Yes, that’s right. You can get Mjolnir 2 as a tube hybrid, or as a pure solid-state
+                            amp—or get both, and swap out as you’d like.<br>You can also swap the standard 6BZ7 tubes for anything in the 6DJ8, 6922, ECC88, and 2492 families, to “roll” the sound to your specific preference. Or just opt for the Schiit
+                            LISST (Linear, Integral Solid-State Tube) for a 100% solid state amp. Power and Control in Abundance Mjolnir 2 puts out up to 8W/channel into 32 ohms, but is fully ready for high-sensitivity headphones with switchable gain.
+                            Use the standard gain of 8 for hard-to-drive headphones, or switch to a gain of 1 for sensitive on-ear models and IEMs. In addition, Mjolnir 2 also offers both balanced and single-ended input, switchable via the front panel.<br>Want
+                            more? How about both balanced and single-ended headphone outputs and balanced and single-ended preamp outputs. Mjolnir also makes a great preamp for your power amps or powered monitors. Pure Balanced, Differential Topology
+                            Mjolnir uses our exclusive, inherently balanced and differential Crossfet topology—the only circlotron-style topology in a headphone amplifier (well, except for Ragnarok.) It’s balanced in and balanced out, with a custom 4-gang
+                            RK27 Alps volume pot—providing end-game performance for a mid-level price.<br>5-Year Warranty, 15-Day Satisfaction Guarantee Mjolnir is covered by a limited warranty that covers parts and labor for five years. That’s 5 years.
+                            Yes. FIVE. Compare that to the competition. Don’t like Mjolnir? No problem. You can send it back for a full refund, minus 5% transaction fee, within 15 days of receiving your amp.
+                        </p>
+                        <ul>
+                            <li>Frequency Response: 20Hz-20Khz, -0.1db, 2Hz-400KHz, -3dB</li>
+                            <li>Maximum Power, 32 ohms: 8.0W RMS per channel, Maximum Power, 50 ohms: 5.0W RMS per channel</li>
+                            <li>Maximum Power, 300 ohms: 850mW RMS per channel, Maximum Power, 600 ohms: 425mW RMS per channel</li>
+                            <li>THD: less than 0.005%, 20Hz-20KHz, at 1V RMS</li>
+                            <li>SNR: less than 104db, unweighted, referenced to 1V RMS, in low gain mode</li>
+                            <li>Output Impedance: 1 ohm (high gain), 0.3 ohms (low gain)</li>
+                            <li>Gain: 8 (18dB) or 1(0db), via front-panel switch</li>
+                            <li>Topology: Tube voltage gain or solid-state tube voltage gain, cross-shunt push-pull Crossfet output stage, noninverting, single voltage gain stage</li>
+                            <li>Power Supply: specific Circlotron 4-secondary output stage transformer with over 65,000uF filter capacitance, plus dedicated transformer for high-voltage discrete-regulated front end stage with 200V rails and over 4,000uf of
+                                filter capacitance</li>
+                            <li>Inputs: one pair balanced XLR, one pair single-ended RCAs, switchable via front panel switch</li>
+                            <li>Outputs: one 4-pin balanced female XLR, one ¼” TRS phono, one pair 3-pin male XLR preamp, one pair single-ended RCA</li>
+                            <a href="http://www.the-ear.net/review-hardware/schiit-gungnir-multibit-and-mjolnir-2-dac-and-headphone-amp">Mjolnir 2 Review</a>
+                            <li><strong>Price (excluding UK delivery) Tubes Only £650 (enquire), LISST only £750 (enquire), Tubes and LISST £785</strong></li>
+                        </ul>
+                        <button class="buybtn btn btn-outline-success" onclick="addToCart('Schiit Mjolnir 2', '785')">Buy</button>
+                    </div>
+                    <img src="assets/images/mjolnir-2.jpg" alt="Mjolnir Amp" class="img-fluid img1">
+                    <img src="assets/images/mjolnir-2-rear.jpg" alt="Mjolnir Amp rear" class="img-fluid">
+                    <hr class="separator">
+                </div>
+                <div class="item-description">
+                    <h4 class="highlight">Schiit Ragnarok</h4>
+                    <div class="info">
+                        <p>
+                            Ragnarok is the first truly universal amplifier, fully capable of powering everything from IEMs to loudspeakers. With up to 100 watts per channel into 4 ohms, 3 selectable gains, a sophisticated relay-switched stepped attenuator volume control, complete
+                            microprocessor management of all operational points, including bias and DC offset, and Schiit’s Crossfet™ circlotron-style output topology, Ragnarok completely befits its name—in Norse legend, Ragnarok was the “end of the world.”
+                            From IEMs to Loudspeakers<br>Go ahead. Plug in your sensitive headphones and set Ragnarok’s gain to 1. You’ll enjoy a silent background, and the fine control that a 64-step attenuator can provide.
+                            Or run it with the most power-hungry orthos you know. With gain set at 20, and 15W RMS into 32 ohms, you’re ready for an amazing performance. Speakers? No problem. With 60W per channel into 8 ohms, Ragnarok delivers amazing
+                            performance with most popular speakers.<br> A Complete Integrated Amp<br> Ragnarok includes 5 relay-switched inputs—two balanced and three single-ended, as well as balanced and single-ended preamp outputs for use as a preamp.
+                            For outputs, both balanced and single-ended outputs are provided for headphones, and balanced speaker terminal outputs for loudspeakers. Nothing In the Signal Path Except Signal Ragnarok is an "intelligent" amplifier, using
+                            a microprocessor to oversee every aspect of its operation—from quiescent bias, to DC offset, to complete fault protection. It’s also designed so that any major problem mutes all the outputs and reverts the amp to its low-gain,
+                            zero volume mode. This means we can dispense with coupling caps and DC servos entirely, for a gain stage that has nothing in the signal path—except for your music.<br> Made in USA By “made in USA,” we mean made in USA. Ragnarok
+                            is built to order in Valencia, CA, by our most experienced assemblers, subjected to a rigorous series of both instrumented and listening tests, and burnt in for 100+ hours before being re-tested and shipped. As with all of
+                            our products, the vast majority of the total production cost of Ragnarok—chassis, boards, transformers, assembly, etc—goes to US companies manufacturing in the US. Our board house is 20 minutes away from our office in Newhall.
+                            Our chassis guys are just over the hill in the Valley. 5-Year Warranty Ragnarok is covered by a limited warranty that covers parts and labor for five years. That’s 5 years. Yes. FIVE. Which is up to 5X that of our competition,
+                            if you weren’t so hot at math. Note the marketing weasel-wording “up to.” 15-Day Satisfaction Guarantee Try Ragnarok in your own house for 15 days. If you don’t like it, simply send it back for a refund, minus a 5% transaction
+                            fee. Try spending 15 days in an audio store. They’ll kick you out. Unless you buy them donuts. Maybe.
+                        </p>
+                        <ul>
+                            <li>Frequency Response: 20Hz-20Khz, -0.25db, 2Hz-110KHz, -3dB</li>
+                            <li>Maximum Power, 4 ohms: 100W RMS per channel, 8 ohms: 60W RMS per channel, 32 ohms: 15W RMS per channel</li>
+                            <li>Maximum Power, 50 ohms: 10W RMS per channel, 300 ohms: 1.7W RMS per channel, 600 ohms: 850mW RMS per channel</li>
+                            <li>THD: Less than 0.006%, 20Hz-20KHz, at 1V RMS</li>
+                            <li>SNR: More than 103db, unweighted, referenced to 1V RMS, in gain = 1 mode</li>
+                            <li>Crosstalk: Less than -80dB, 20Hz-20KHz</li>
+                            <li>Gain: 20 (26dB), 5 (14dB), 1 (0db) via front panel switch</li>
+                            <li>Topology: Fully discrete Crossfet™ circlotron-style output stage with solid state voltage gain stage, microprocessor management of quiescent current and DC offset, as well as discrete summing stages for single-ended output</li>
+                            <li>Protection: microprocessor monitoring of fault conditions including DC, overcurrent, and transient phenomena, with relay muting on any fault</li>
+                            <li>Size: 16 x 12 x 3.75”</li>
+                            <a href="http://headphone.guru/product-of-the-year-2014-reviewer-picks/#sthash.DEdK0bx1.dpuf">Ragnarok Review</a>
+                            <li><strong>Price (excluding UK delivery) £1350</strong></li>
+                        </ul>
+                        <button class="buybtn btn btn-outline-success" onclick="addToCart('Schiit Ragnarok', '1350')">Buy</button>
+                    </div>
+                    <img src="assets/images/Ragnarok.jpg" alt="Ragnarok Amp" class="img-fluid img1">
+                    <img src="assets/images/ragnarok-rear.jpg" alt="Ragnarok Amp rear" class="img-fluid">
+                    <hr class="separator">
+                </div>
+                <!-- CD Players -->
+                <div>
+                    <h4 class="highlight">DACS</h4>
+                    <div class="item-description">
+                        <h4 class="highlight">Multibit Gungnir</h4>
+                        <div class="info">
+                            <p>
+                                Multibit or delta-sigma? Yes. With Gungnir, you have the flexibility to choose between affordable delta-sigma performance, or Schiit’s own proprietary multibit architecture with closed-form digital filter. Both versions offer excellent performance for
+                                a moderate price—as well as the comfort of completely upgradable, modular design.
+                                <br>Gungnir: Formidable Performance. Choose Gungnir, and you get a truly hardware-balanced DAC with two AKM AK4399 32-bit D/A converters, followed by a fully discrete, JFET-input stage for current gain and filtering. The
+                                result is exceptional performance for the price—frequently lauded by the press as the best in its price class. Gungnir Multibit: Above and Beyond<br> Choose Gungnir Multibit, and you get the same proprietary closed-form
+                                DSP-based digital filter as Yggdrasil, coupled to four precision Analog Devices AD5781BRUZ digital to analog converters for true hardware balancing and 19 effective bits of resolution. The analog section is completed with
+                                discrete JFET buffers and summers, the same as Yggdrasil. Adapticlock™: Unique Clock Analysis and Regeneration Both versions of Gungnir include our proprietary Adapticlock system, which provides for both exceptional jitter
+                                performance and rock-solid, glitch-free connectivity. Adapticlock analyzes the incoming signal quality and automatically routes it to the best clock regeneration system—either VCXO or VCO-based. And, it does all of this
+                                without altering the bit depth or sample rate of your original music. Forget decrapifiers, regenerators, isolators, and all the USB dongles and boxes you’ve been told you need for USB sound. Our all-new Gen 5 USB input
+                                doesn’t require any of that stuff. It’s this simple: Gen 5 is USB, solved. Now standard on all our upgradable DACs, Gen 5 USB features full galvanic isolation via transformers, self-power for low noise and latching, and
+                                high-quality local clocking for both 44.1 and 48k multiples.<br> 5-Year Warranty - Gungnir is covered by a limited warranty that covers parts and labor for five years. That’s 5 years. Yes. FIVE. Which is up to 5X that of
+                                our competition, if you weren’t so hot at math. Note the marketing weasel-wording “up to.”<br> 15-Day Satisfaction Guarantee - Try Gungnir in your own house for 15 days. If you don’t like it, simply send it back for a refund,
+                                minus a 5% transaction fee. Try spending 15 days in an audio store. They’ll kick you out. Unless you buy them donuts. Maybe.
+                            </p>
+                            <ul>
+                                <a href="http://www.the-ear.net/review-hardware/schiit-gungnir-multibit-and-mjolnir-2-dac-and-headphone-amp">Multibit Gungnir review</a>
+                                <li><strong>Price (excluding UK delivery) £1150</strong></li>
+                            </ul>
+                            <button class="buybtn btn btn-outline-success" onclick="addToCart('Multibit Gungnir', '1150')">Buy</button>
+                        </div>
+                        <img src="assets/images/gungnir.jpg" alt="" class="img-fluid img1">
+                        <img src="assets/images/gungnir-back.jpg" alt="" class="img-fluid">
+                        <hr class="separator">
+                    </div>
+                </div>
+                <div class="item-description">
+                    <h4 class="highlight">Yggdrasil</h4>
+                    <div class="info">
+                        <p>
+                            Forget everything you know about DACs. Yggdrasil is the world’s only closed-form multibit DAC, delivering 21 bits of resolution with no guessing anywhere in the digital or analog path. We’ve thrown out delta-sigma D/As and traditional digital filters
+                            to preserve the original samples all the way through from input to output. Let’s take a closer look:<br> Closed-Form Digital Filter Preserves Original Samples Most DACs simply use the stoc Mission-Critical
+                            D/A Tech, Discrete Class A Analog 2 Output For MRI diagnoses, doctors don’t rely on the guesswork of “24 bit” or “32 bit” delta-sigma D/A converters. Instead, they choose the bit-perfect imaging of precision multibit DACs,
+                            like the Analog Devices AD5791. We chose this same critical technology for Yggdrasil. Now in Analog 2 form (shipping since late 2017), we’ve combined the output of four of these DACs with DC-coupled, low-noise, Class A JFET
+                            buffers and summers with high current output capability to drive long cable runs and low-impedance line inputs, such as 600 ohm professional gear.<br> Adapticlock and USB Gen 5: Advanced Input Optimization Yggdrasil accepts
+                            up to 5 digital inputs and carefully manages them with our Adapticlock™ clock regeneration system. Adapticlock is the most sophisticated clock management system in the world. It assesses the quality of all inputs, measures
+                            their incoming center frequency and jitter, and automatically routes the input to the best clock regeneration system. And, our Gen 5 USB features full galvanic isolation via transformers, self-power for low-noise and latching
+                            sections, and high-quality local clocking for both 44.1 and 48k multiples. (And, if you don’t understand the technobabble, here’s the bottom line: it works and sounds great.) Made in USA By “made in USA,” we mean made in USA.
+                            The vast majority of the total production cost of Yggdrasil—chassis, boards, transformers, assembly, etc—goes to US companies manufacturing in the US. Our board house is 20 minutes away from our office in Newhall. Our chassis
+                            guys are just over the hill in the Valley. 5-Year Warranty Yggdrasil is covered by a limited warranty that covers parts and labor for five years. That’s 5 years. Yes. FIVE. Which is up to 5X that of our competition, if you
+                            weren’t so hot at math. Note the marketing weasel-wording “up to.” 15-Day Satisfaction Guarantee Try Yggdrasil in your own house for 15 days. If you don’t like it, simply send it back for a refund, minus a 5% transaction fee.
+                            Try spending 15 days in an audio store. They’ll kick you out. Unless you buy them donuts. Maybe.
+                        </p>
+                        <ul>
+                            <li>Inputs: AES/EBU XLR, RCA SPDIF, BNC SPDIF, Optical SPDIF, USB </li>
+                            <li>Input Capability: up to 24/192 for all inputs</li>
+                            <li>Clock Management: Bitperfect clock management at all native sample rates via Adapticlock analysis and VCXO/VCO regeneration, plus asynchronous USB Gen 5 module</li>
+                            <li>Digital Filter: proprietary Schiit bitperfect closed-form digital filter implemented on Analog Devices SHARC DSP processor</li>
+                            <li>D/A Conversion IC: Analog Devices AD5791BRUZ x 4 (2 per channel, hardware balanced configuration)</li>
+                            <li>Analog Stage: Fully discrete, DC coupled Class A FET buffers optimized for high current output and fully discrete, Class A FET summing stages for single-ended output</li>
+                            <li>Output: One pair XLR balanced and two pairs RCA single-ended</li>
+                            <li>Frequency Response, Analog Stage: 20Hz-20Khz, +/-0.1dB, 0.5Hz-200KHz, -1dB</li>
+                            <li>SNR: > 119dB, referenced to 2V RMS</li>
+                            <li>Power Supply: two transformers (one for digital supplies, one for analog supplies) plus one input choke for discrete, dual mono, shunt-regulated analog +/-24V supply, plus 12 separate local regulated supplies for DACs and digital
+                                sections, including high-precision, low-noise LM723 regulation in critical areas</li>
+                            <li>Upgradability: Fully modular architecture. Separate digital input board, USB input board, DSP engine board, and DAC/analog output boards</li>
+                            <a href="https://www.soundstagehifi.com/index.php/equipment-reviews/1139-schiit-audio-yggdrasil-digital-to-analog-converter-with-analog-2-upgrade">Yggdrasil DAC review</a>
+                            <li><strong>Price (excluding UK delivery) £1950</strong></li>
+                        </ul>
+                        <button class="buybtn btn btn-outline-success" onclick="addToCart('Schiit Yggdrasil', '1950')">Buy</button>
+                    </div>
+                    <img src="assets/images/yggy.jpg" alt="Yggdrasil Dac" class="img-fluid img1">
+                    <img src="assets/images/Yggy-rear.jpg" alt="Yggdrasil Dac rear" class="img-fluid">
+                    <hr class="separator">
+                </div>
+
+            </section>
+        </div>
+        <!-- Headphone Section -->
+        <div class="row">
+            <section id="headphone-section" class="text-center">
+                <a href="#top" class="top-link"><i class="fas fa-chevron-up"></i></a>
+                <div>
+                    <h3><strong>Headphones</strong></h3>
+                    <p>We stock some of the worlds finest headphones at all budgets. We believe headphones give the best audio experience easily surpassing similarly price loudspeakers for clarity, detail and immediacy
+                    </p>
+                </div>
+                <div class="row d-flex justify-content-center flex-wrap">
+                    <div id="menu">
+                        <a href="#audeze">Audeze</a>
+                        <a href="#beyer">Beyer Dynamic</a>
+                        <a href="#hifiman">Hifiman</a>
+                        <a href="#sennheiser">Sennheiser</a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row" id="audeze">
+                        <div class="company-info">
+                            <a href="https://www.audeze.com/">
+                                <img src="assets/images/audeze-logo.png" alt="" class="audeze-logo">
+                                <h3 class="highlight">Audeze</h3>
+                            </a>
+                            <p>Audeze was founded by 2 headphone enthusiasts back in 2009 with the sole aim of creating the best headphone experinece available and in the matter of a few short few years they have achieved their goal with the stunning LCD-2's,
+                                LCD-3's, LCD-X and LCD-XC's along with the EL-8 range, Like HiFiMan and OPPO Headphones, Audeze also use their own version of a Planer Magnetic driver design rather than the more common dynamic design, giving them an extremely
+                                accurate presentation which is why they have become a favourite in pro audio studios for mastering thanks to their natural and accurate presentation with great transparency</p>
+                        </div>
+                        <!-- List Audeze Phones -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="highlight phone-title">Audeze LCD-4</h4>
+                                <img src="assets/images/LCD-4_1.jpg" alt="LCD-4" class="img-fluid phone-image">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="phone-description">The LCD-4 represents 40 years of advancements in planar magnetic technology and our own research and development from 2009 onward when we debuted our first product. Our new flagship headphone features game-changing technology,
+                                    like its first-of-the-kind nano-scale diaphragm with Double Fluxor™ Magnet Arrays that nearly double the driving power. "I’ve had a lot of reference-grade headphones here over the years, but none exceeds what I’ve experienced
+                                    with the LCD-4s...This is top o' the heap performance, amigos!"
+                                </p>
+                                <a href="https://www.innerfidelity.com/content/technologically-impressive-lcd-4-planar-magnetic-headphone">LCD-4 review</a>
+                                <h4 class="highlight">Price (inc shipping): £3450</h4>
+                                <button class="buybtn btn btn-outline-success" onclick="addToCart('Audeze LCD-4', '3450')">Buy</button>
+                                <hr class="separator">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="highlight phone-title">Audeze LCD-3</h4>
+                                <img src="assets/images/LCD-3_1.jpg" alt="LCD-3" class="img-fluid phone-image">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="phone-description">
+                                    The LCD-3 is a time machine that puts you in the room with your favorite artists and musicians. It’s luxuriously spacious, with powerful bass, a rich and engaging midrange, and a top-end that draws you into the music. Its rich, vibrant sound has scale
+                                    and authority derived from a deep, ambient soundstage with exciting detail and dynamics. The LCD-3 is said to be the best in the world and its natural timbre, especially through the midrange, has been described as a
+                                    thing of beauty.<br> "In design, build, and performance, they’re the epitome of high-end."
+                                </p>
+                                <a href="https://www.whathifi.com/audeze/lcd-3/review">LCD-3 review</a>
+                                <h4 class="highlight">Price (inc shipping): £1750</h4>
+                                <button class="buybtn btn btn-outline-success" onclick="addToCart('Audeze LCD-3', '1750')">Buy</button>
+                                <hr class="separator">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="highlight phone-title">Audeze LCD-X</h4>
+                                <img src="assets/images/LCD-X.jpg" alt="LCD-X" class="img-fluid phone-image">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="phone-description">
+                                    The LCD-X is incredibly dynamic, nimble, neutral and transparent, accurately revealing everything on the recording.<br>It quickly became the ultimate tool for recording engineers, musicians and audiophiles alike for
+                                    its clean, accurate sound. The sense of space is enormous, the midrange and high frequencies offer fantastic detail so you can hear further into the recording with more air and separation between performers. "To call
+                                    the LCD-Xs good would be an understatement on a par with describing the Beatles as popular, because they’re not good. They’re amazing."
+                                </p>
+                                <a href="http://www.trustedreviews.com/reviews/audeze-lcd-x">LCD-X review</a>
+                                <h4 class="highlight">Price (inc shipping): £1350</h4>
+                                <button class="buybtn btn btn-outline-success" onclick="addToCart('Audeze LCD-X', '1350')">Buy</button>
+                                <hr class="separator">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="highlight phone-title">Audeze LCD-XC</h4>
+                                <img src="assets/images/LCD-XC-series.jpg" alt="LCD-XC" class="img-fluid phone-image">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="phone-description">
+                                    The LCD-XC Closed-Back Headphone is incredibly dynamic, nimble, neutral and transparent, accurately revealing everything on the recording.<br>It quickly became the ultimate tool for recording engineers, musicians and
+                                    audiophiles alike for its clean, accurate sound. The closed-back design offers all the benefits of a planar magnetic headphone with increased isolation and greatly reduced ambient noise for a private and powerful listening
+                                    experience. Your favorite music erupts from a silent background taking on a life of its own. The sense of space is enormous, the midrange and high frequencies offer fantastic detail so you can hear further into the
+                                    recording with more air and separation between performers. "Dynamic impact is astonishing, you never get the feeling you’re approaching the limits of what it can do."
+                                </p>
+                                <a href="https://www.headfonia.com/time-go-closed-back-audeze-lcd-xc/">LCD-XC review</a>
+                                <h4 class="highlight">Price (inc shipping): £1650</h4>
+                                <button class="buybtn btn btn-outline-success" onclick="addToCart('Audeze LCD-XC', '1650')">Buy</button>
+                                <hr class="separator">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="highlight phone-title">Audeze LCD-2</h4>
+                                <img src="assets/images/LCD-2.jpg" alt="LCD-2" class="img-fluid phone-image">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="phone-description">
+                                    The beautifully handcrafted LCD-2, the planar magnetic headphone that put Audeze on the high-end map, delivers audiophile quality, low-distortion sound that articulates the power and nuance of your favorite music.<br>                                    The LCD-2 is the most forgiving of poor recordings in the LCD Collection with a beautiful, musically rich presentation that communicates the warmth, power and glory of music. "In a number of ways it was the best headphone
+                                    I'd ever measured."
+                                </p>
+                                <a href="http://majorhifi.com/audeze-lcd-2-review/">LCD-2 review</a>
+                                <h4 class="highlight">Price (inc shipping): £875</h4>
+                                <button class="buybtn btn btn-outline-success" onclick="addToCart('Auseze LCD-2', '875')">Buy</button>
+                                <hr class="separator">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Beyer -->
+                    <div class="row text-center" id="beyer">
+                        <div class="company-info">
+                            <a href="https://europe.beyerdynamic.com/kopfhorer-headsets.html">
+                                <img src="assets/images/beyer-logo.svg" alt="" class="beyer-logo">
+                                <h3 class="highlight">Beyer Dynamic</h3>
+                            </a>
+                            <p>To design, engineer and manufacture superior quality professional audio products. The Shareholder’s vision for beyerdynamic is as a specialist manufacturer and engineering company with a specific focus within the Conferencing
+                                and Transducer (headphones / headsets & microphones) market segments.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="highlight phone-title">T1</h4>
+                                <img src="assets/images/beyerT1.jpg" alt="Beyer T1" class="img-fluid phone-image">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="phone-description">
+                                    Audiophile Tesla Hi-Fi headphones, semi-open (2nd Generation)
+                                </p>
+                                <ul>
+                                    <li>Semi-open high-end stereo headphones for enjoying music at home</li>
+                                    <li>Highly efficient Tesla technology drivers with 600 Ohms for spacious, transparent and powerful sound</li>
+                                    <li>Double-sided, detachable and textile braided cable with OCC 7N copper conductors inside</li>
+                                    <li>Breathable, super-soft ear cushions and high-quality headband made of protein-coated synthetic leather ensure high wearing comfort</li>
+                                    <li>Handcrafted "Made in Germany"</li>
+                                </ul>
+                                <h4 class="highlight">Price (inc shipping): £1200</h4>
+                                <button class="buybtn btn btn-outline-success" onclick="addToCart('Beyer Tesla T1', '1200')">Buy</button>
+                                <hr class="separator">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="highlight phone-title">T5 P</h4>
+                                <img src="assets/images/beyerT5P.jpg" alt="Beyer T5 P" class="img-fluid phone-image">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="phone-description">
+                                    Audiophile hi-fi headphones, closed, optimized for portable players (2nd Generation)<br> The second generation T 5 p unites mobility and audiophile sound quality on a whole new level.<br>Like its predecessor, the T
+                                    5 p combines the unique Tesla technology with the advantages of a closed design.<br> The impedance of 32 ohms makes the T 5 p the ideal partner for portable audio devices Closed design (excellent isolation of ambient
+                                    noise) for enjoying music at home on portable players 32 Ohms Tesla technology with an exceptional neutral sound transmission and highest efficiency Double-sided, detachable and textile braided cable (1.4 m) with OCC
+                                    7N copper conductor Super-soft ear cushions made of protein-coated synthetic leather with memory foam ensure high wearing comfort Hand crafted "Made in Germany
+                                </p>
+                                <ul>
+                                    <li>Closed design (excellent isolation of ambient noise) for enjoying music at home on portable players</li>
+                                    <li>32 Ohms Tesla technology with an exceptional neutral sound transmission and highest efficiency</li>
+                                    <li>Double-sided, detachable and textile braided cable (1.4 m) with OCC 7N copper conductor</li>
+                                    <li>Super-soft ear cushions made of protein-coated synthetic leather with memory foam ensure high wearing comfort</li>
+                                    <li>Hand crafted "Made in Germany"</li>
+                                </ul>
+                                <h4 class="highlight">Price (ex shipping): £750</h4>
+                                <button class="buybtn btn btn-outline-success" onclick="addToCart('Beyer T5 P', '750')">Buy</button>
+                                <hr class="separator">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="highlight phone-title">Amiron home</h4>
+                                <img src="assets/images/amiron.png" alt="Beyer Amiron Home" class="img-fluid phone-image">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="phone-description">
+                                    Tesla high-end stereo headphone (open)<br> Amiron home is our invitation to pure musical enjoyment. Never before has your living room sounded more like a real concert hall. Just hearing the first few notes will turn
+                                    you into a dedicated fan of Amiron home, your superb musical companion that will bring you brilliant and reliable sound for many years to come. The name Amiron home represents high-end headphones that embody our boundless
+                                    passion for music and epitomise the workmanship of being "Handmade in Germany".
+                                </p>
+                                <ul>
+                                    <li>Open, high-end over-ear headphones for an authentic concert experience at home</li>
+                                    <li>The improved and optimised Tesla technology guarantees a listening experience that's in a class of its own</li>
+                                    <li>Precise and clear resolution makes the Amiron home a musical talent for the most varied music genres</li>
+                                    <li>High-quality materials ensure optimum wearing comfort, even when enjoying music for several hours</li>
+                                    <li>Made in Germany offers the promise of durability and optimum quality</li>
+                                </ul>
+                                <h4 class="highlight">Price (ex shipping): £475</h4>
+                                <button class="buybtn btn btn-outline-success" onclick="addToCart('Beyer Amiron', '475')">Buy</button>
+                                <hr class="separator">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of beyer -->
+                    <!-- Hifiman Section -->
+                    <div class="row text-center d-flex justify-content-center" id="hifiman">
+                        <div class="company-info">
+                            <a href="http://www.hifiman.com">
+                                <img src="assets/images/hifiman-logo.png" alt="" class="hifiman-logo">
+                                <h3 class="highlight">Hifiman</h3>
+                            </a>
+                            <p>In 2009 Hifiman released the HM-801, the first true high end portable music player, hightly acclaimed my music lovers and critis alike.<br> Hifiman is also critically acclaimed for its planer magnetic headphones that feature
+                                state of the art driver technology.<br> We continue to produce some of the worlds best headphones today
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="highlight phone-title">Hifiman HE-6</h4>
+                                <img src="assets/images/hifiman-he6.jpg" alt="Hifiman HE-6" class="img-fluid phone-image">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="phone-description">
+                                    Considered by many to be the world‘s finest headphone, without regard to price, the HIFIMAN HE-6 features the company‘s proprietary planar magnetic technology in a no-compromise design. With sensitivity of 83.5dB, the HE6 must be paired with a powerful
+                                    amplifier like Audio-gd Master 9 or Schiit Ragnarok.<br> The HE-6 is the reference choice of critical listeners around the world.
+                                </p>
+                                <ul>
+                                    <li>Frequency Response : 8Hz -65 KHz </li>
+                                    <li>Sensitivity : 83.5dB </li>
+                                    <li>Impedance : 50 Ohms </li>
+                                    <li>Weight : 502 g </li>
+                                    <a href="http://hifiman.com/articles/detail/261">HE-6 review</a>
+                                </ul>
+                                <h4 class="highlight">Price (ex shipping): £1200</h4>
+                                <button class="buybtn btn btn-outline-success" onclick="addToCart('Hifiman HE-6', '1200')">Buy</button>
+                                <hr class="separator">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="highlight phone-title">HE1000 V2</h4>
+                                <img src="assets/images/hifiman-he1000v2.jpg" alt="Hifiman HE1000 v2" class="img-fluid phone-image">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="phone-description">
+
+                                </p>
+                                <ul>
+                                    <li>Impedance : 35 Ohms</li>
+                                    <li>Frequency Response : 8Hz-65KHz </li>
+                                    <li>Sensitivity : 90dB</li>
+                                    <li>Weight : 420g</li>
+                                </ul>
+                                <h4 class="highlight">Price (ex shipping): £2700</h4>
+                                <button class="buybtn btn btn-outline-success" onclick="addToCart('Hifiman HE-1000 v2', '2700')">Buy</button>
+                                <hr class="separator">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="highlight phone-title">Hifiman Sundara</h4>
+                                <img src="assets/images/hifiman-sundara.jpg" alt="Hifiman Sundara" class="img-fluid phone-image">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="phone-description">
+
+                                </p>
+                                <ul>
+                                    <li>Frequency Response : 6Hz-75kHz</li>
+                                    <li>Impedance : 37Ω</li>
+                                    <li>Sensitivity : 94dB </li>
+                                    <li>Weight : 372g </li>
+                                </ul>
+                                <h4 class="highlight">Price (ex shipping): £420</h4>
+                                <button class="buybtn btn btn-outline-success" onclick="addToCart('Hifiman Sundara', '420')">Buy</button>
+                                <hr class="separator">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of hifiman -->
+                    <!-- Sennheiser -->
+                    <div class="row text-center d-flex justify-content-center" id="sennheiser">
+                        <div class="company-info">
+                            <a href="https://en-uk.sennheiser.com/">
+                                <img src="assets/images/sennheiser-logo.svg" class="senn-logo" alt="Sennheiser logo">
+                                <h3 class="highlight">Sennheiser</h3>
+                            </a>
+                            <p>
+                                To design, engineer and manufacture superior quality professional audio products. The Shareholder’s vision for beyerdynamic is as a specialist manufacturer and engineering company with a specific focus within the Conferencing and Transducer (headphones
+                                / headsets & microphones) market segments.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="highlight phone-title">HD660 S</h4>
+                                <img src="assets/images/senn-660s.jpg" alt="HD660 S" class="img-fluid phone-image">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="phone-description">
+                                    A new audiophile versatility<br> The new HD 660 S lets you enjoy sophisticated audiophile sound in even more listening situations.<br> The successor of the legendary HD 650 excels with the improved performance of its
+                                    new transducer design. Thanks to its lower impedance, it delivers reference-class sound also when connected to hi-res mobile players, thus offering much greater versatility. The HD 660 S is an elegantly designed piece
+                                    of high-quality engineering that indulges the demanding listener with aural precision and great wearing comfort.
+                                </p>
+                                <ul>
+                                    <li>Impedance 150 Ω</li>
+                                    <li>Connector 6.35 mm / 4.4 mm Pentaconn</li>
+                                    <li>Frequency response: 10 – 41,000 Hz (-10 dB)</li>
+                                    <a href="http://www.trustedreviews.com/reviews/sennheiser-hd-660-s">Sennheiser HD660 S review</a>
+                                </ul>
+                                <h4 class="highlight">Price (inc shipping): £380</h4>
+                                <button class="buybtn btn btn-outline-success" onclick="addToCart('Sennheiser HD660 S', '380')">Buy</button>
+                                <hr class="separator">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="highlight phone-title">HD820</h4>
+                                <img src="assets/images/senn-820.jpg" alt="HD820" class="img-fluid phone-image">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="phone-description">
+                                    With these groundbreaking closed dynamic headphones passionate music lovers can now enjoy their music at an audiophile level wherever they please, at home or on the move.<br> Featuring unique glass transducer covers
+                                    that minimize resonances, the HD 820 are simply the most transparent-sounding closed headphones in the world, extending the boundaries of what has been achieved in sound reproduction with closed type headphones up to
+                                    now.
+                                </p>
+                                <ul>
+                                    <li>Headphones HD 820 (closed, dynamic headphones)</li>
+                                    <li>Connection cable: ¼” (6.35 mm) stereo jack plug (connected ex works), unbalanced</li>
+                                    <li>4.4 mm Pentaconn stereo jack plug, balanced</li>
+                                    <li>XLR-4 connector, balanced</li>
+                                </ul>
+                                <h4 class="highlight">Price (inc shipping): £1999</h4>
+                                <button class="buybtn btn btn-outline-success" data-toggle="modal" data-target="added-modal" onclick="addToCart('Sennheiser HD-820', '1999')">Buy</button>
+                                <hr class="separator">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="highlight phone-title">HD800s</h4>
+                                <img src="assets/images/senn-800.jpg" alt="HD800s" class="img-fluid phone-image">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="phone-description">
+                                    A modern classic, Sennheiser’s reference class HD 800 headphones deliver sound that is as natural as possible and true in every detail. Improving on a seemingly perfect formula is not a task undertaken lightly, but Sennheiser’s engineers have succeeded
+                                    in enhancing still further the sound reproduction in the open, circumaural HD 800 S.
+                                </p>
+                                <ul>
+                                    <li>Further optimised reference class in wired headphones</li>
+                                    <li>Open, circum-aural dynamic stereo headphones</li>
+                                    <li>Enhanced sound reproduction achieved through absorber technology</li>
+                                    <li>Additional cable with balanced XLR4 connector</li>
+                                    <li>High-class matte black metal partsHigh-class matte black metal parts</li>
+                                    <li>Biggest transducers ever used in headphones including new innovative dynamic transducer design</li>
+                                    <li>Handcrafted ear pads, made of high-quality microfiber fabric</li>
+                                    <li>Specially tuned balanced, impedance matching cable with low capacitance</li>
+                                    <li>Special high precision headphone connectors</li>
+                                    <a href="https://www.whathifi.com/sennheiser/hd800s/review">Sennheiser HD800s review</a>
+                                </ul>
+                                <h4 class="highlight">Price (ex shipping): £1350</h4>
+                                <button class="buybtn btn btn-outline-success" onclick="addToCart('Sennheiser HD800 S', '1350')">Buy</button>
+                                <hr class="separator">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- End of container -->
+            </section>
+            <!-- Added Item Model -->
+            <div id="addedModal" class="modal fade">
+                <p>Item added to cart</p>
+                <!-- Modal content -->
+              <div id="added-modal-content">
+                
+              </div>
+            </div>
+        </div>
+        <footer class="row">
+            <section id="footer" class="text-center">
+                <p>copyright 2016 Nigel James Wheeldon</p>
+            </section>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
